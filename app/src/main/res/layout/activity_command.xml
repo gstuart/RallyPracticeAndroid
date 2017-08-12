@@ -15,16 +15,15 @@ tools:context="crazyeels.rallypractice.Command">
     android:textColor="@color/colorAccentDark"
     android:textSize="48sp"
     android:textStyle="bold"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="50dp"/>
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
 
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/content"
-    android:textSize="@dimen/textXXLarge"
+    android:textSize="@dimen/textSuper"
     android:textColor="@color/colorAccent"
-    android:text="@string/begin"
     android:textStyle="bold"
     android:textAlignment="center"
     android:layout_marginLeft="@dimen/marginLarge"
@@ -43,6 +42,6 @@ tools:context="crazyeels.rallypractice.Command">
     android:layout_alignParentBottom="true"
     android:layout_alignParentStart="true"
     android:background="@color/colorAccent"
-    android:padding="@dimen/paddingXLarge"/>
+    android:padding="@dimen/paddingMedium"/>
 
 </RelativeLayout>

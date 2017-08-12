@@ -23,6 +23,7 @@
     <dimen name="marginLarge">16dp</dimen>
     <dimen name="marginXLarge">24dp</dimen>
     <dimen name="marginXXLarge">32dp</dimen>
+    <dimen name="textSuper">64sp</dimen>
 
 
 </resources>

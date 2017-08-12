@@ -7,10 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.Random;
 
 public class Command extends AppCompatActivity {
 
+    private TextView heading;
     private TextView commandTextView;
     private Button nextButton;
 
@@ -19,6 +22,7 @@ public class Command extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_command);
 
+        heading = (TextView) findViewById(R.id.intro);
         commandTextView = (TextView) findViewById(R.id.content);
         nextButton = (Button) findViewById(R.id.submitButton);
 
@@ -26,6 +30,9 @@ public class Command extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                // Remove Let's Practice Heading
+                heading.setVisibility(View.GONE);
+
                 // List of Commands which will randomly displayed
                 String [] commands = {
                     "#3 - Sit",
