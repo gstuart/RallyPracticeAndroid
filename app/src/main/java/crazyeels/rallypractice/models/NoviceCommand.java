@@ -1,8 +1,8 @@
-package crazyeels.rallypractice;
+package crazyeels.rallypractice.models;
 
 import java.util.Random;
 
-public class NoviceCommands {
+public class NoviceCommand {
 // Properties about the object
 
 // Actions the object can do
