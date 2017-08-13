@@ -25,7 +25,10 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity android:name=".ui.Command" />
+        <activity
+            android:name=".ui.Command"
+            android:label="@string/app_name">
+        </activity>
 
     </application>
 
