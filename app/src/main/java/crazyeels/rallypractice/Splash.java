@@ -1,7 +1,10 @@
 package crazyeels.rallypractice;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import crazyeels.rallypractice.ui.Command;
 
 public class Splash extends AppCompatActivity {
 
@@ -9,5 +12,9 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        Intent intent = new Intent(this, Command.class);
+        startActivity(intent);
+        finish();
     }
 }

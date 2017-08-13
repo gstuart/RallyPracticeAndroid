@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="crazyeels.rallypractice.Splash">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/app_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="@dimen/textXXLarge"
+        tools:layout_editor_absoluteY="84dp"
+        tools:layout_editor_absoluteX="44dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/activity_launcher_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_image"
+        tools:layout_editor_absoluteY="252dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
