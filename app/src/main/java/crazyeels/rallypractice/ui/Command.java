@@ -35,6 +35,7 @@ public class Command extends AppCompatActivity {
                 // Update the screen with new command
                 String nCommand = noviceCommand.getNoviceCommand();
                 commandTextView.setText(nCommand);
+                nextButton.setText("ANOTHER");
             }
         } ;
 
