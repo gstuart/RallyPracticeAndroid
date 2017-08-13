@@ -10,9 +10,14 @@
                     android:icon="@drawable/ic_menu_gallery"
                     android:title="@string/cards" />
                 <item
-                    android:id="@+id/nav_slideshow"
+                    android:id="@+id/nav_videos"
                     android:icon="@drawable/ic_menu_slideshow"
                     android:title="@string/video" />
+                <item
+                    android:id="@+id/nav_akc"
+
+                    android:title="@string/video" /> <!--TODO Need to add akc icon-->
+                <!--android:icon="@drawable/ic_menu_akc"-->
             </menu>
         </item>
     </group>
@@ -33,7 +38,7 @@
     <item android:title="@string/tools">
         <menu>
             <item
-                android:id="@+id/nav_manage"
+                android:id="@+id/nav_support"
                 android:icon="@drawable/ic_menu_support"
                 android:title="@string/support" />
             <item
