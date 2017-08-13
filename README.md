@@ -1,5 +1,3 @@
-![Banner Image](/app/src/main/res/drawable/main.jpg)
-
 # Rally Practice Android
  [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
@@ -35,16 +33,27 @@ AKC Rally®  is a companion sport to AKC Obedience. It requires teamwork between
 *  In Android Studio, `Run` project
 
 ### Screen Shots
-<img src="/app/src/main/res/drawable/screenshots/welcome.png" alt="Welcome" width="250"> <img src="/app/src/main/res/drawable/screenshots/command_example.png" alt="Command Example" width="250"> <img src="/app/src/main/res/drawable/screenshots/navigation.png" alt="Available navigation" width="250"> <img src="/app/src/main/res/drawable/screenshots/cards.png" alt="Cards" width="250">
+ <img src="/app/src/main/res/drawable/screenshots/welcome.png" alt="Welcome" width="250"> <img src="/app/src/main/res/drawable/screenshots/command_example.png" alt="Command Example" width="250"> <img src="/app/src/main/res/drawable/screenshots/navigation.png" alt="Available navigation" width="250"> 
 
 ## Known Bugs (Listed In Priority Order)
 * :bug: = S1
 * :ant: = S2
 * :beetle: = S3
  
+> :ant: WebView layout is not displaying the website for Demo Videos and card details
 > 
+> :ant: "Rally Cards" not functionioning as designed while under construction
+>
+> :ant: "Share The App" not functionioning as designed while under construction
 > 
+> :ant: "Send" not functionioning as designed while under construction
 > 
+> :ant: "Support" not functionioning as designed while under construction
+> 
+> :ant: "Rate The App" not functionioning as designed while under construction
+> 
+> :ant: "Setting" not functionioning as designed while under construction
+
 
 
 ## Sources
