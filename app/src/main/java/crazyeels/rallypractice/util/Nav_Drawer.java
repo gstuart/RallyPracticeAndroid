@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import crazyeels.rallypractice.R;
 import crazyeels.rallypractice.models.NoviceCommand;
+import crazyeels.rallypractice.ui.WebViewActivity;
 
 
 public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener {
@@ -116,7 +117,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
         } else if (id == R.id.nav_akc) {
             // Takes the user to the Rally page on the AKC website
-            loadLink(Constants.akc_url, "AKC RALLY");
+            loadLink(Constants.akc_url, "AKC Rally Rule Book");
 
 
         } else if (id == R.id.nav_share) {

@@ -16,7 +16,7 @@
                 <item
                     android:id="@+id/nav_akc"
 
-                    android:title="@string/video" /> <!--TODO Need to add akc icon-->
+                    android:title="@string/akc" /> <!--TODO Need to add akc icon-->
                 <!--android:icon="@drawable/ic_menu_akc"-->
             </menu>
         </item>

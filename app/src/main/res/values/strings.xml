@@ -13,14 +13,14 @@
     <!-- Nav Drawer -->
     <string name="learn">Learn</string>
         <string name="cards">Rally Cards</string>
-        <string name="video">Videos</string>
-        <string name="tools">Tools</string>
+        <string name="video">Demo Videos</string>
+        <string name="akc">AKC Rally Card Details</string>
     <string name="communicate">Communicate</string>
-        <string name="share">Share</string>
+        <string name="share">Share The App</string>
         <string name="send">Send</string>
-
-    <string name="support">Support</string>
-    <string name="rate">Rate The App</string>
+    <string name="tools">Tools</string>
+        <string name="support">Support</string>
+        <string name="rate">Rate The App</string>
 
 
     <!-- Main -->
