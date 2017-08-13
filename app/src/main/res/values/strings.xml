@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Rally Practice</string>
+    <string name="app_name">Rally® Practice</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="app_description">This is the app description</string>
+    <string name="app_description">One-stop-shopping for all your Rally® practice needs</string>
     <string name="begin">Begin</string>
     <string name="intro">"Let's Practice!"</string>
     <string name="action_settings">Settings</string>
@@ -12,9 +12,9 @@
 
     <!-- Nav Drawer -->
     <string name="learn">Learn</string>
-        <string name="cards">Rally Cards</string>
+        <string name="cards">Rally® Cards</string>
         <string name="video">Demo Videos</string>
-        <string name="akc">AKC Rally Card Details</string>
+        <string name="akc">AKC Rally® Card Details</string>
     <string name="communicate">Communicate</string>
         <string name="share">Share The App</string>
         <string name="send">Send</string>
