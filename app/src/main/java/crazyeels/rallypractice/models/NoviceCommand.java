@@ -3,7 +3,7 @@ package crazyeels.rallypractice.models;
 import java.util.Random;
 
 public class NoviceCommand {
-// Properties about the object
+    // List of Commands which will randomly displayed
     String [] noviceCommands = {
         "#3 - Sit",
         "#4 - Sit, Down",
@@ -43,9 +43,7 @@ public class NoviceCommand {
 
 // Actions the object can do
     public String getNoviceCommand() {
-        // List of Commands which will randomly displayed
-
-        // Randomly display a command within the set parameters
+    // Randomly display a command within the set parameters
         Random randomizer = new Random();
         int randomCommand = randomizer.nextInt(noviceCommands.length);
 
