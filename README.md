@@ -62,6 +62,7 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 * [Splash screen](https://www.bignerdranch.com/blog/splash-screens-the-right-way/)
 * [Rally® Video Demo's](https://www.youtube.com/watch?v=3wrPZcKXR0E&list=PL7jyQ4vQtEeKAWa8DMRRJj3gPOmJmFmhG)
 * [AKC Rally® Offical Rule Book](http://images.akc.org/pdf/rulebooks/ROR001.pdf)
+*[Sending an email to app Support](https://tips.androidhive.info/2017/07/android-launching-email-client-app-support-using-intents/)
 
 ## Maintainer
 [Grace Stuart](href="https://github.com/gstuart")
