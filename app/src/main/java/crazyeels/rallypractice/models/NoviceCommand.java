@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class NoviceCommand {
     // List of Commands which will randomly displayed
-    String [] noviceCommands = {
+    private String [] noviceCommands = {
         "#3 - Sit",
         "#4 - Sit, Down",
         "#5 - Right Turn",
@@ -41,7 +41,6 @@ public class NoviceCommand {
         "#36 - Slow Forward From Sit"
 };
 
-// Actions the object can do
     public String getNoviceCommand() {
     // Randomly display a command within the set parameters
         Random randomizer = new Random();
