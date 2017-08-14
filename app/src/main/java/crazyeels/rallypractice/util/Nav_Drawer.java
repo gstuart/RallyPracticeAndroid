@@ -49,7 +49,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        // Methods for Command Activity
+/* Methods for Command Activity
             heading = (TextView) findViewById(R.id.intro);
             commandTextView = (TextView) findViewById(R.id.content);
             nextButton = (Button) findViewById(R.id.submitButton);
@@ -69,7 +69,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             } ;
 
             nextButton.setOnClickListener(nextCommand);
-
+*/
     }
 // Methods for Nav_Drawer
     @Override
@@ -82,27 +82,28 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    Below are methods for the menu.main.xml (the menu on the top right of every screen that contains "Settings")
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.main, menu);
+//        return true;
+//    }
+////
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -118,11 +119,11 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             // Takes user to youtube playlist of practice videos in a webViewer
             loadLink(Constants.youtube_url, "Novice Rally Playlist");
 
+
         } else if (id == R.id.nav_akc) {
+            Log.i(TAG, "click on nav_akc");
             // Takes the user to the Rally page on the AKC website
             loadLink(Constants.akc_url, "AKC Rally Rule Book");
-            Log.i(TAG, "click on nav_akc");
-
 
         } else if (id == R.id.nav_share) {
             // Allows user to share the app via text message, twitter, email, and Facebook
