@@ -16,8 +16,8 @@
                 <item
                     android:id="@+id/nav_akc"
 
-                    android:title="@string/akc" /> <!--TODO Need to add akc icon-->
-                <!--android:icon="@drawable/ic_menu_akc"-->
+                    android:title="@string/akc"
+                    android:icon="@drawable/menu_akc"/>
             </menu>
         </item>
     </group>

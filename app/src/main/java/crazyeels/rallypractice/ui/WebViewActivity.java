@@ -20,8 +20,6 @@ public class WebViewActivity extends AppCompatActivity {
     private WebView mWebView;
     private Toolbar mToolbar;
 
-// TODO 8/12/17 find out why the back arrow doesnt work on the webView page
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,12 +96,16 @@ public class WebViewActivity extends AppCompatActivity {
 
     @Override
     public void onPause() {
+        mWebView.onPause();
+        mWebView.pauseTimers();
         super.onPause();
     }
 
-//    @Override
-//    protected void attachBaseContext(Context newBase) {
-//        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-//    }
+    @Override
+    public void onDestroy() {
+        mWebView.destroy();
+        mWebView = null;
+        super.onDestroy();
+    }
 
 }
