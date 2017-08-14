@@ -123,7 +123,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         } else if (id == R.id.nav_akc) {
             Log.i(TAG, "click on nav_akc");
             // Takes the user to the Rally page on the AKC website
-            loadLink(Constants.akc_url, "AKC Rally Rule Book");
+            loadLink(Constants.akc_url, "Official AKC Rally Rule Book");
 
         } else if (id == R.id.nav_share) {
             // Allows user to share the app via text message, twitter, email, and Facebook
