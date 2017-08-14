@@ -26,6 +26,8 @@ import crazyeels.rallypractice.ui.WebViewActivity;
 
 public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener {
 
+    public static final String TAG = Nav_Drawer.class.getSimpleName();
+
     // variables for Command Activity
         private NoviceCommand noviceCommand = new NoviceCommand();
         private TextView heading;
@@ -112,6 +114,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             // Displays a series of images of the actual cards
 
         } else if (id == R.id.nav_videos) {
+            Log.d(TAG, "seeing result after clicking nav_videos");
             // Takes user to youtube playlist of practice videos in a webViewer
             loadLink(Constants.youtube_url, "Novice Rally Playlist");
 
