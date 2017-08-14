@@ -5,7 +5,7 @@
 ## Short Description
 > Android app for displaying random AKC Rally® instruction cards.
 
-AKC Rally®  is a companion sport to AKC Obedience. It requires teamwork between dog and handler along with performance skills similar to obedience. AKC Rally® shows off your dog's training by mastering a course full of fun exercises. This app allows you to practice the exercises in a random order. You can also learn more about AKC Rally® excercises by reading the official 2017 exercise descriptions and judging criteria, and watching videos of others demonstrating the exercise.
+AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between dog and handler along with performance skills similar to obedience. AKC Rally® shows off your dog's training by mastering a course full of fun exercises. This app allows you to practice the exercises in a random order. You can also learn more about AKC Rally® excercises by reading the official 2017 exercise descriptions and judging criteria, and watching videos of others demonstrating the exercise.
 
 ## Table of Contents
 - [Sections](#sections)
@@ -40,27 +40,28 @@ AKC Rally®  is a companion sport to AKC Obedience. It requires teamwork between
 * :ant: = S2
 * :beetle: = S3
 
-> :bug: Back arrow on WebView layout not functioning
+> :bug: 
 >
-> :ant: WebView layout is not displaying the website for Demo Videos and card details
+> :ant: 
 > 
-> :ant: "Rally Cards" not functionioning as designed while under construction
+> :ant: "Rally Cards" not functioning; as designed while app is under construction
 >
-> :ant: "Share The App" not functionioning as designed while under construction
+> :ant: "Share The App" not functioning; as designed while app is under construction
 > 
-> :ant: "Send" not functionioning as designed while under construction
+> :ant: "Send" not functioning; as designed while app is under construction
 > 
-> :ant: "Support" not functionioning as designed while under construction
+> :ant: "Support" not functioning; as designed while app is under construction
 > 
-> :ant: "Rate The App" not functionioning as designed while under construction
+> :ant: "Rate The App" not functioning; as designed while app is under construction
 > 
-> :ant: "Setting" not functionioning as designed while under construction
+> :ant: "Setting" not functioning; as designed while app is under construction
 
 
 
 ## Sources
-* [Checkboxes in a list view](http://www.android-examples.com/create-listview-with-multiple-checkbox-in-android/)
 * [Splash screen](https://www.bignerdranch.com/blog/splash-screens-the-right-way/)
+* [Rally® Video Demo's](https://www.youtube.com/watch?v=3wrPZcKXR0E&list=PL7jyQ4vQtEeKAWa8DMRRJj3gPOmJmFmhG)
+* [AKC Rally® Offical Rule Book](http://images.akc.org/pdf/rulebooks/ROR001.pdf)
 
 ## Maintainer
 [Grace Stuart](href="https://github.com/gstuart")
