@@ -6,13 +6,13 @@
         <item android:title="@string/learn">
             <menu>
                 <item
-                    android:id="@+id/nav_gallery"
-                    android:icon="@drawable/ic_menu_gallery"
-                    android:title="@string/cards" />
-                <item
                     android:id="@+id/nav_videos"
                     android:icon="@drawable/ic_menu_slideshow"
                     android:title="@string/video" />
+                <!--<item-->
+                    <!--android:id="@+id/nav_gallery"-->
+                    <!--android:icon="@drawable/ic_menu_gallery"-->
+                    <!--android:title="@string/cards" />-->
                 <item
                     android:id="@+id/nav_akc"
 
@@ -22,18 +22,18 @@
         </item>
     </group>
 
-    <item android:title="@string/communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/send" />
-        </menu>
-    </item>
+    <!--<item android:title="@string/communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="@string/share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="@string/send" />-->
+        <!--</menu>-->
+    <!--</item>-->
 
     <item android:title="@string/tools">
         <menu>
@@ -41,10 +41,7 @@
                 android:id="@+id/nav_support"
                 android:icon="@drawable/ic_menu_support"
                 android:title="@string/support" />
-            <item
-                android:id="@+id/nav_rate"
-                android:icon="@drawable/ic_menu_thumbs_up"
-                android:title="@string/rate" />
+           droid:title="@string/rate" />-->
         </menu>
     </item>
 </menu>

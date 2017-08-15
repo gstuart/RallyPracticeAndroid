@@ -25,5 +25,9 @@
 
     <!-- Main -->
     <string name="setting">Settings</string>
+    <string name="nav_akc">Official Rule Book</string>
+    <string name="nav_videos">Novice Rally Playlist</string>
+    <string name="support_email_subject">Support Request for Rally Practice Android App</string>
+    <string name="send_email">Send email:</string>
 
 </resources>

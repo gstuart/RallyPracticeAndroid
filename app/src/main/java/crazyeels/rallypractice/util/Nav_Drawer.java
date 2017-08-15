@@ -110,33 +110,33 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_gallery) {
-            // Displays a series of images of the actual cards
-
-        } else if (id == R.id.nav_videos) {
+        if (id == R.id.nav_videos) {
             Log.d(TAG, "seeing result after clicking nav_videos");
             // Takes user to youtube playlist of practice videos in a webViewer
-            loadLink(Constants.youtube_url, "Novice Rally Playlist");
+            loadLink(Constants.youtube_url, getString(R.string.nav_videos));
+
+//        } else if (id == R.id.nav_gallery) {
+//            // Displays a series of images of the actual cards
 
 
         } else if (id == R.id.nav_akc) {
             Log.i(TAG, "click on nav_akc");
             // Takes the user to the Rally page on the AKC website
-            loadLink(Constants.akc_url, "Official AKC Rally Rule Book");
+            loadLink(Constants.akc_url, getString(R.string.nav_akc));
 
-        } else if (id == R.id.nav_share) {
-            // Allows user to share the app via text message, twitter, email, and Facebook
-
-
-        } else if (id == R.id.nav_send) {
-            // Takes the user to
+//        } else if (id == R.id.nav_share) {
+//            // Allows user to share the app via text message, twitter, email, and Facebook
+//
+//
+//        } else if (id == R.id.nav_send) {
+//            // Takes the user to
 
         } else if (id == R.id.nav_support) {
             // Generates an email, with device version, that user can write in and then send
-            sendSupportEmail(this, new String[]{"crazyeelsapps@gmail.com"}, "Support Request for Rally Practice Android App");
+            sendSupportEmail(this, new String[]{Constants.support_email}, getString(R.string.support_email_subject));
             Log.e(TAG, "Click on Support link in navDrawer");
 
-        } else if (id == R.id.nav_rate) {
+//        } else if (id == R.id.nav_rate) {
             // Takes the user to Google Play app review page
 //            rateTheApp();
         }
@@ -185,7 +185,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         intent.putExtra(Intent.EXTRA_EMAIL, to);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, body);
-        context.startActivity(Intent.createChooser(intent, "Send email:"));
+        context.startActivity(Intent.createChooser(intent, context.getString(R.string.send_email)));
     }
 
     private void loadLink(String url, String title) {
