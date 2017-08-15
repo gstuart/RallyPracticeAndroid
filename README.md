@@ -50,12 +50,7 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 > 
 > :ant: "Send" not functioning; as designed while app is under construction
 > 
-> :ant: "Support" not functioning; as designed while app is under construction
-> 
 > :ant: "Rate The App" not functioning; as designed while app is under construction
-> 
-> :ant: "Setting" not functioning; as designed while app is under construction
-
 
 
 ## Sources
