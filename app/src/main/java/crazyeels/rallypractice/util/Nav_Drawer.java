@@ -48,7 +48,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-/* Methods for Command Activity
+/* Method for Command Activity */
             heading = (TextView) findViewById(R.id.intro);
             commandTextView = (TextView) findViewById(R.id.content);
             nextButton = (Button) findViewById(R.id.submitButton);
@@ -68,7 +68,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             } ;
 
             nextButton.setOnClickListener(nextCommand);
-*/
+
     }
 // Methods for Nav_Drawer
     @Override
