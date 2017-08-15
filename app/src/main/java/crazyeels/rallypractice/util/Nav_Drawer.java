@@ -4,7 +4,6 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -13,14 +12,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import crazyeels.rallypractice.R;
 import crazyeels.rallypractice.models.NoviceCommand;
@@ -137,7 +133,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
         } else if (id == R.id.nav_support) {
             // Generates an email, with device version, that user can write in and then send
-            sendSupportEmail(this, new String[]{"crazyeelsapps@gmail.com", "github.gstuart@gmail.com"}, "Rally Practice Android App");
+            sendSupportEmail(this, new String[]{"crazyeelsapps@gmail.com", "github.gstuart@gmail.com"}, "Support Request for Rally Practice Android App");
             Log.e(TAG, "Click on Support link in navDrawer");
 
         } else if (id == R.id.nav_rate) {
@@ -169,9 +165,18 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         String body = "";
         try {
             body = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
-            body = "How can we help?\n\n\n\n\n\n\nPlease do not delete below contents\nDevice OS: Android(" +
-                    Build.VERSION.RELEASE + ")\n App v" + body + "\n Device: " + Build.BRAND +
-                    ", " + Build.MODEL;
+            body = "How can we help?\n\n\n\n\n\n\nPlease do not delete below contents"
+                    + "\nApp: Rally Practice for Android"
+                    + "\nDevice OS: Android("
+                    + Build.VERSION.RELEASE
+                    + ")"
+                    + "\n App v"
+                    + body
+                    + ""
+                    + "\n Device: "
+                    + Build.BRAND
+                    + ", "
+                    + Build.MODEL;
         } catch (PackageManager.NameNotFoundException e) {
         }
         Intent intent = new Intent(Intent.ACTION_SEND);
