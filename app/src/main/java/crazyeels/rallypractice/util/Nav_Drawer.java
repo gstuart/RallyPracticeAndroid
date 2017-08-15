@@ -165,6 +165,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         String body = "";
         try {
             body = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+            body = context.getApplicationInfo().name;
             body = "How can we help?\n\n\n\n\n\n\nPlease do not delete below contents"
                     + "\nApp: Rally Practice for Android"
                     + "\nDevice OS: Android("
