@@ -133,7 +133,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
         } else if (id == R.id.nav_support) {
             // Generates an email, with device version, that user can write in and then send
-            sendSupportEmail(this, new String[]{"crazyeelsapps@gmail.com", "github.gstuart@gmail.com"}, "Support Request for Rally Practice Android App");
+            sendSupportEmail(this, new String[]{"crazyeelsapps@gmail.com"}, "Support Request for Rally Practice Android App");
             Log.e(TAG, "Click on Support link in navDrawer");
 
         } else if (id == R.id.nav_rate) {
