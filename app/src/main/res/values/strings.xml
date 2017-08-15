@@ -3,7 +3,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+<!--TODO need to come up with a better app_description-->
     <string name="app_description">One-stop-shopping for all your Rally® practice needs</string>
     <string name="begin">Begin</string>
     <string name="intro">"Let's Practice!"</string>
