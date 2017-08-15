@@ -1,8 +1,11 @@
 package crazyeels.rallypractice.util;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -131,11 +134,11 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
         } else if (id == R.id.nav_send) {
             // Takes the user to
-            sendSupportEmail();
 
         } else if (id == R.id.nav_support) {
             // Generates an email, with device version, that user can write in and then send
-
+            sendSupportEmail(this, new String[]{"crazyeelsapps@gmail.com", "github.gstuart@gmail.com"}, "Rally Practice Android App");
+            Log.e(TAG, "Click on Support link in navDrawer");
 
         } else if (id == R.id.nav_rate) {
             // Takes the user to Google Play app review page
@@ -162,29 +165,21 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 //        }
 //    }
 
-    public void sendSupportEmail() {
-        String subject = "[APP-SUPPORT]";
-        String message =
-                "<html><body><p>I need help with : </p>" +
-                        "</p>" +
-                        "</body></html>";
+    public static void sendSupportEmail(Context context, String[] to, String subject) {
+        String body = "";
         try {
-            Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-            emailIntent.setData(Uri.parse("RallyPracticeSupport@gmail.com"));
-            emailIntent.putExtra(Intent.EXTRA_BCC, new String[]{"mailto:github.gstuart@gmail.com"});
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
-            emailIntent.putExtra(Intent.EXTRA_TEXT, Html.fromHtml(message));
-            Intent intent = Intent.createChooser(emailIntent, "Request support");
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(emailIntent);
-        } catch(android.content.ActivityNotFoundException ex) {
-            Toast.makeText(Nav_Drawer.this, "You do not have an email client installed on your phone!", Toast.LENGTH_LONG).show();
-
-        } catch (NullPointerException e) {
-            Log.e("Null Pointer Exception", "sendSupportEmail : NullPointerException");
-        } catch (UnsupportedOperationException e) {
-            Log.e("UnsupportedOp Exception", "unsupported");
+            body = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+            body = "How can we help?\n\n\n\n\n\n\nPlease do not delete below contents\nDevice OS: Android(" +
+                    Build.VERSION.RELEASE + ")\n App v" + body + "\n Device: " + Build.BRAND +
+                    ", " + Build.MODEL;
+        } catch (PackageManager.NameNotFoundException e) {
         }
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("message/rfc822");
+        intent.putExtra(Intent.EXTRA_EMAIL, to);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, body);
+        context.startActivity(Intent.createChooser(intent, "Send email:"));
     }
 
     private void loadLink(String url, String title) {
