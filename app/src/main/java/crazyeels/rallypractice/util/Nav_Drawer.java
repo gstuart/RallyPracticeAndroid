@@ -82,7 +82,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             super.onBackPressed();
         }
     }
-
+//TODO determine if using menu or not, if not remove code below
 //    Below are methods for the menu.main.xml (the menu on the top right of every screen that contains "Settings")
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
