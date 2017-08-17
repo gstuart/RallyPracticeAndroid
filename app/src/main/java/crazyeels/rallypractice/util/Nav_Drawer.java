@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -15,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -122,7 +124,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         } else if (id == R.id.nav_akc) {
             Log.i(TAG, "click on nav_akc");
             // Takes the user to the Rally page on the AKC website
-            loadLink(Constants.akc_url, getString(R.string.nav_akc));
+            loadPdf(Constants.akc_url, getString(R.string.nav_akc));
 
 //        } else if (id == R.id.nav_share) {
 //            // Allows user to share the app via text message, twitter, email, and Facebook
@@ -192,6 +194,13 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         Intent intent = new Intent(this, WebViewActivity.class);
         intent.putExtra("Url", url);
         intent.putExtra("Title", title);
+        startActivity(intent);
+    }
+
+    private void loadPdf(String url, String title) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.putExtra("Title", title);
+        intent.setDataAndType(Uri.parse( "http://docs.google.com/viewer?url=" + url), "text/html");
         startActivity(intent);
     }
 
