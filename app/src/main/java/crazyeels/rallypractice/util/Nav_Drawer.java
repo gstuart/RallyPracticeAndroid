@@ -200,8 +200,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
     private void loadPdf(String url, String title) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.putExtra("Title", title);
-        intent.setDataAndType(Uri.parse( "http://docs.google.com/viewer?url=" + url), "text/html");
+        intent.setDataAndType(Uri.parse( Constants.google_viewer_url + url), Constants.text_html);
         startActivity(intent);
     }
 
