@@ -151,9 +151,6 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
     public void rateTheApp() {
         Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
         Intent myAppLink = new Intent(Intent.ACTION_VIEW, uri);
-//        myAppLink.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY
-//                | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET
-//                | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
         try {
             startActivity(myAppLink);
         } catch(ActivityNotFoundException e) {
