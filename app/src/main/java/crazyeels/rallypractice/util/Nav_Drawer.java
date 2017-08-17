@@ -65,7 +65,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
                     // Update the screen with new command
                     String nCommand = noviceCommand.getNoviceCommand();
                     commandTextView.setText(nCommand);
-                    nextButton.setText("ANOTHER");
+                    nextButton.setText(getString(R.string.another));
                 }
             } ;
 
