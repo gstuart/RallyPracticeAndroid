@@ -193,8 +193,8 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
     private void loadLink(String url, String title) {
         Intent intent = new Intent(this, WebViewActivity.class);
-        intent.putExtra("Url", url);
-        intent.putExtra("Title", title);
+        intent.putExtra(getString(R.string.url), url);
+        intent.putExtra(getString(R.string.title), title);
         startActivity(intent);
     }
 

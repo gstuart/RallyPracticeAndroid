@@ -32,5 +32,7 @@
     <string name="support_email_subject">Support Request for Rally Practice Android App</string>
     <string name="send_email">Send email:</string>
     <string name="unable_to_find_app">Unable to find Rally Practice</string>
+    <string name="title">Title</string>
+    <string name="url">Url</string>
 
 </resources>
