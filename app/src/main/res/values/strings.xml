@@ -3,7 +3,9 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
 <!--TODO need to come up with a better app_description-->
+
     <string name="app_description">One-stop-shopping for all your Rally® practice needs</string>
     <string name="begin">Begin</string>
     <string name="intro">"Let's Practice!"</string>
@@ -17,11 +19,11 @@
         <string name="akc">Card Rules &amp; Descriptions</string>
     <string name="communicate">Communicate</string>
         <string name="share">Share The App</string>
-        <string name="send">Send</string>
-    <string name="tools">Tools</string>
+            <string name="shareSubject">AKC RALLY® PRACTICE</string>
+            <string name="shareBody">Check out this great app!</string>
+            <string name="shareVia">Share via</string>
         <string name="support">Support</string>
         <string name="rate">Rate The App</string>
-
 
     <!-- Main -->
     <string name="setting">Settings</string>

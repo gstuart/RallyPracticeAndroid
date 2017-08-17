@@ -126,12 +126,9 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             // Takes the user to the Rally page on the AKC website
             loadPdf(Constants.akc_url, getString(R.string.nav_akc));
 
-//        } else if (id == R.id.nav_share) {
-//            // Allows user to share the app via text message, twitter, email, and Facebook
-//
-//
-//        } else if (id == R.id.nav_send) {
-//            // Takes the user to
+        } else if (id == R.id.nav_share) {
+            // Allows user to share the app via text message, twitter, email, and Facebook
+            shareApp();
 
         } else if (id == R.id.nav_support) {
             // Generates an email, with device version, that user can write in and then send
@@ -139,7 +136,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             Log.e(TAG, "Click on Support link in navDrawer");
 
         } else if (id == R.id.nav_rate) {
-//             Takes the user to Google Play app review page
+          //  Takes the user to Google Play app review page
             rateTheApp();
         }
 
@@ -147,7 +144,17 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-//TODO 8/17 need to test this after app is published
+
+    private void shareApp() {
+        Intent shareApp = new Intent(android.content.Intent.ACTION_SEND);
+        shareApp.setType("text/plain");
+        String shareBody = getString(R.string.shareBody);
+        shareApp.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.shareSubject));
+        shareApp.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(shareApp, getString(R.string.shareVia)));
+    }
+
+    //TODO 8/17 need to test this after app is published
     public void rateTheApp() {
         Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
         Intent myAppLink = new Intent(Intent.ACTION_VIEW, uri);
