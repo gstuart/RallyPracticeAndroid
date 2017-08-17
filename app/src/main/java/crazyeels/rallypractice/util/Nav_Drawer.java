@@ -16,9 +16,9 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import crazyeels.rallypractice.R;
 import crazyeels.rallypractice.models.NoviceCommand;
@@ -138,9 +138,9 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             sendSupportEmail(this, new String[]{Constants.support_email}, getString(R.string.support_email_subject));
             Log.e(TAG, "Click on Support link in navDrawer");
 
-//        } else if (id == R.id.nav_rate) {
-            // Takes the user to Google Play app review page
-//            rateTheApp();
+        } else if (id == R.id.nav_rate) {
+//             Takes the user to Google Play app review page
+            rateTheApp();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -148,20 +148,18 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         return true;
     }
 
-//    public void rateTheApp() {
-//        Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
-//        Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-//        goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY
+    public void rateTheApp() {
+        Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
+        Intent myAppLink = new Intent(Intent.ACTION_VIEW, uri);
+//        myAppLink.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY
 //                | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET
 //                | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
-//
-//        try {
-//            startActivity(goToMarket);
-//        } catch(ActivityNotFoundException e) {
-//            startActivity(new Intent(Intent.ACTION_VIEW,
-//                Uri.parse(getString(R.string.(Constants.google_play_store_prefix)) + this.getPackageName())));
-//        }
-//    }
+        try {
+            startActivity(myAppLink);
+        } catch(ActivityNotFoundException e) {
+            Toast.makeText(this, " Unable to find Rally Practice", Toast.LENGTH_LONG).show();
+        }
+    }
 
     public static void sendSupportEmail(Context context, String[] to, String subject) {
         String body = "";
