@@ -28,6 +28,9 @@
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="@string/share" />
+
+            <!--TODO need to make support and rate light grey like other icons, or make all others darker-->
+
             <item
                 android:id="@+id/nav_support"
                 android:icon="@drawable/ic_menu_support"
