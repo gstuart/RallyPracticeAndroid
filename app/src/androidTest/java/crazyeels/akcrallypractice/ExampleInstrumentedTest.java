@@ -1,4 +1,4 @@
-package crazyeels.rallypractice;
+package crazyeels.akcrallypractice;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

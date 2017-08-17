@@ -1,4 +1,4 @@
-package crazyeels.rallypractice.util;
+package crazyeels.akcrallypractice.util;
 
 public final class Constants {
   /* Nav Drawer */

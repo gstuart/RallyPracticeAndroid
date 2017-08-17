@@ -1,4 +1,4 @@
-package crazyeels.rallypractice.util;
+package crazyeels.akcrallypractice.util;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -20,9 +20,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import crazyeels.rallypractice.R;
-import crazyeels.rallypractice.models.NoviceCommand;
-import crazyeels.rallypractice.ui.WebViewActivity;
+import crazyeels.akcrallypractice.R;
+import crazyeels.akcrallypractice.models.NoviceCommand;
+import crazyeels.akcrallypractice.ui.WebViewActivity;
 
 
 public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener {
@@ -170,7 +170,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             body = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
             body = context.getApplicationInfo().name;
             body = "How can we help?\n\n\n\n\n\n\nPlease do not delete below contents"
-                    + "\nApp: Rally Practice for Android"
+                    + "\nApp: AKC Rally® Practice for Android"
                     + "\nDevice OS: Android("
                     + Build.VERSION.RELEASE
                     + ")"

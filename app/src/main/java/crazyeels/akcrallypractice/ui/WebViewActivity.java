@@ -1,20 +1,18 @@
-package crazyeels.rallypractice.ui;
+package crazyeels.akcrallypractice.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 
-import crazyeels.rallypractice.R;
+import crazyeels.akcrallypractice.R;
 
 public class WebViewActivity extends AppCompatActivity {
     private WebView mWebView;

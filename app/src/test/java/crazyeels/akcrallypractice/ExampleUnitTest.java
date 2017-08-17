@@ -1,4 +1,4 @@
-package crazyeels.rallypractice;
+package crazyeels.akcrallypractice;
 
 import org.junit.Test;
 

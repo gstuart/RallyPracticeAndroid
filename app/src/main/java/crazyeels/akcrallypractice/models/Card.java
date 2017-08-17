@@ -1,4 +1,4 @@
-package crazyeels.rallypractice.models;
+package crazyeels.akcrallypractice.models;
 
 import java.net.URL;
 

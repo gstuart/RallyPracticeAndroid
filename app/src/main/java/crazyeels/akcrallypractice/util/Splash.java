@@ -1,11 +1,11 @@
-package crazyeels.rallypractice.util;
+package crazyeels.akcrallypractice.util;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import crazyeels.rallypractice.R;
-import crazyeels.rallypractice.ui.Command;
+import crazyeels.akcrallypractice.R;
+import crazyeels.akcrallypractice.ui.Command;
 
 public class Splash extends AppCompatActivity {
 
