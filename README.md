@@ -33,7 +33,7 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 *  In Android Studio, `Run` project
 
 ### Screen Shots
- <img src="/app/libs/home.png" alt="Home" width="250"> <img src="/app/libs/command.png" alt="Command Example" width="250"> <img src="/app/libs/nav_drawer.png" alt="Available navigation" width="250"><img src="/app/screenshots/demo.png" alt="Demo Videos" width="250"><img src="/app/libs/rules.png" alt="support email" width="250">
+ <img src="/app/libs/home.png" alt="Home" width="250"> <img src="/app/libs/command.png" alt="Command Example" width="250"> <img src="/app/libs/nav_drawer.png" alt="Available navigation" width="250"> <img src="/app/libs/demo.png" alt="Demo Videos" width="250"> <img src="/app/libs/rules.png" alt="support email" width="250">
  
  
 
