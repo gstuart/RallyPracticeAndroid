@@ -33,10 +33,9 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 *  In Android Studio, `Run` project
 
 ### Screen Shots
- <img src="/app/src/main/res/drawable/screenshots/welcome.png" alt="Welcome" width="250"> <img src="/app/src/main/res/drawable/screenshots/command_example.png" alt="Command Example" width="250"> <img src="/app/src/main/res/drawable/screenshots/navigation.png" alt="Available navigation" width="250"><img src="/app/src/main/res/drawable/screenshots/demo.png" alt="Demo Videos" width="250"><img src="/app/src/main/res/drawable/screenshots/support.png" alt="support email" width="250">
+ <img src="/app/libs/home.png" alt="Home" width="250"> <img src="/app/libs/command.png" alt="Command Example" width="250"> <img src="/app/libs/nav_drawer.png" alt="Available navigation" width="250"><img src="/app/screenshots/demo.png" alt="Demo Videos" width="250"><img src="/app/libs/rules.png" alt="support email" width="250">
  
  
-
 
 ## Known Bugs (Listed In Priority Order)
 * :bug: = S1
@@ -54,6 +53,9 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 * [Rally® Video Demo's](https://www.youtube.com/watch?v=3wrPZcKXR0E&list=PL7jyQ4vQtEeKAWa8DMRRJj3gPOmJmFmhG)
 * [AKC Rally® Offical Rule Book](http://images.akc.org/pdf/rulebooks/ROR001.pdf)
 * [Sending an email to app Support](https://tips.androidhive.info/2017/07/android-launching-email-client-app-support-using-intents/)
+* [Rate App](http://blog.cubeactive.com/android-how-to-create-a-rank-this-app-button/)
+* [Display pdf]()
+* [Sharing app](https://code.tutsplus.com/tutorials/android-sdk-implement-a-share-intent--mobile-8433)
 
 ## Maintainer
 [Grace Stuart](href="https://github.com/gstuart")
