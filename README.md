@@ -5,7 +5,7 @@
 ## Short Description
 > Android app for displaying random AKC Rally® instruction cards.
 
-AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between dog and handler along with performance skills similar to obedience. AKC Rally® shows off your dog's training by mastering a course full of fun exercises. This app allows you to practice the exercises in a random order. You can also learn more about AKC Rally® excercises by reading the official 2017 exercise descriptions and judging criteria, and watching videos of others demonstrating the exercise.
+AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between dog and handler along with performance skills similar to obedience. AKC Rally® shows off your dog's training by mastering a course full of fun exercises. This app allows you to practice the exercises in a random order. You can also learn more about AKC Rally® exercises by reading the official 2017 exercise descriptions and judging criteria, and watching videos of others demonstrating the exercise.
 
 ## Table of Contents
 - [Sections](#sections)
@@ -43,6 +43,8 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 * :beetle: = S3
 
 > :ant: "Rally Cards" not functioning; as designed while app is under construction
+>
+> :beetle: Rule book displays in browswer not webview layout
 
 
 ## Sources
