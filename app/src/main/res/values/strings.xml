@@ -16,14 +16,14 @@
     <string name="learn">Learn</string>
         <string name="cards">Rally® Cards</string>
         <string name="video">Demo Videos</string>
-        <string name="akc">Card Rules &amp; Descriptions</string>
+        <string name="akc">Rule Book</string>
     <string name="communicate">Communicate</string>
-        <string name="share">Share The App</string>
+        <string name="share">Share</string>
             <string name="shareSubject">AKC RALLY® PRACTICE</string>
             <string name="shareBody">Check out this great app!</string>
             <string name="shareVia">Share via</string>
-        <string name="support">Support</string>
-        <string name="rate">Rate The App</string>
+        <string name="rate">Rate</string>
+    <string name="support">Support</string>
 
     <!-- Main -->
     <string name="setting">Settings</string>
