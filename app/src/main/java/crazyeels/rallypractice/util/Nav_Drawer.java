@@ -148,20 +148,19 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
     private void shareApp() {
         Intent shareApp = new Intent(android.content.Intent.ACTION_SEND);
         shareApp.setType("text/plain");
-        String shareBody = getString(R.string.shareBody);
-        shareApp.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.shareSubject));
-        shareApp.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-        startActivity(Intent.createChooser(shareApp, getString(R.string.shareVia)));
+        shareApp.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.shareSubject));
+        shareApp.putExtra(Intent.EXTRA_TEXT, getString(R.string.shareBody) + "\n" + Constants.google_play_url + this.getPackageName());
+        startActivity(shareApp);
     }
 
-    //TODO 8/17 need to test this after app is published
+    //TODO 8/17 need to test this after app is published, might need to use Constants.google_play_url
     public void rateTheApp() {
         Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
         Intent myAppLink = new Intent(Intent.ACTION_VIEW, uri);
         try {
             startActivity(myAppLink);
         } catch(ActivityNotFoundException e) {
-            Toast.makeText(this, " Unable to find Rally Practice", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.unable_to_find_app, Toast.LENGTH_LONG).show();
         }
     }
 
