@@ -147,7 +147,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
     private void shareApp() {
         Intent shareApp = new Intent(android.content.Intent.ACTION_SEND);
-        shareApp.setType("text/plain");
+        shareApp.setType(Constants.text_html);
         shareApp.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.shareSubject));
         shareApp.putExtra(Intent.EXTRA_TEXT, getString(R.string.shareBody) + "\n" + Constants.google_play_url + this.getPackageName());
         startActivity(shareApp);
