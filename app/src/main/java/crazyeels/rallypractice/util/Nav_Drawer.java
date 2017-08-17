@@ -147,7 +147,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
+//TODO 8/17 need to test this after app is published
     public void rateTheApp() {
         Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
         Intent myAppLink = new Intent(Intent.ACTION_VIEW, uri);
