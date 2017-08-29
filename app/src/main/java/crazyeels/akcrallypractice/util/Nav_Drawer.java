@@ -21,7 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import crazyeels.akcrallypractice.R;
-import crazyeels.akcrallypractice.models.NoviceCommand;
+import crazyeels.akcrallypractice.models.NoviceCommands;
 import crazyeels.akcrallypractice.ui.WebViewActivity;
 
 
@@ -30,7 +30,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
     public static final String TAG = Nav_Drawer.class.getSimpleName();
 
     // variables for Command Activity
-        private NoviceCommand noviceCommand = new NoviceCommand();
+        private NoviceCommands noviceCommand = new NoviceCommands();
         private TextView heading;
         private TextView commandTextView;
         private Button nextButton;

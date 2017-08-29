@@ -42,7 +42,6 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 * :ant: = S2
 * :beetle: = S3
 
->
 > :beetle: Rule book displays in browswer not webview layout
 
 
