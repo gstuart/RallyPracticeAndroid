@@ -20,13 +20,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.barteksc.pdfviewer.PDFView;
+
 import crazyeels.akcrallypractice.R;
 import crazyeels.akcrallypractice.models.NoviceCommands;
 import crazyeels.akcrallypractice.ui.WebViewActivity;
 
 
 public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener {
-
+    PDFView pdfView;
     public static final String TAG = Nav_Drawer.class.getSimpleName();
 
     // variables for Command Activity
@@ -49,6 +51,9 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        pdfView = (PDFView) findViewById(R.id.pdfView);
+        pdfView.fromAsset("rallyregulations.pdf");
 
 /* Method for Command Activity */
             heading = (TextView) findViewById(R.id.intro);
@@ -82,7 +87,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
             super.onBackPressed();
         }
     }
-//TODO determine if using menu or not, if not remove code below
+//TODO determine if using menu in the app or not; if not remove code below
 //    Below are methods for the menu.main.xml (the menu on the top right of every screen that contains "Settings")
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
