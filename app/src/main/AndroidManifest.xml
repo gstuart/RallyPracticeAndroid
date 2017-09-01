@@ -41,7 +41,7 @@
                 android:screenOrientation="portrait"
                 android:value="crazyeels.akcrallypractice.ui.Command" />
         </activity>
-        <activity android:name=".ui.pdf_viewer"></activity>
+
     </application>
 
 </manifest>
