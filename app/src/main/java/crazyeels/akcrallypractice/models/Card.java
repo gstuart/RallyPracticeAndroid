@@ -6,10 +6,10 @@ public class Card {
     private Integer cardNumber;
     private String cardDetail;
     private String level;
-    private URL image;
+    private String image;
     private URL videoLink;
 
-    public Card(Integer number, String detail, String level, URL image, URL videoLink) {
+    public Card(Integer number, String detail, String level, String image, URL videoLink) {
         this.cardNumber = number;
         this.cardDetail = detail;
         this.level = level;
@@ -29,9 +29,10 @@ public class Card {
         return level;
     }
 
-    public URL getImage() {
+    public String getImage() {
         return image;
     }
 
     public URL getVideoLink() { return videoLink; }
+
 }

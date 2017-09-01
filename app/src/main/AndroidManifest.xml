@@ -34,8 +34,7 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name="crazyeels.akcrallypractice.ui.WebViewActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:screenOrientation="portrait"
