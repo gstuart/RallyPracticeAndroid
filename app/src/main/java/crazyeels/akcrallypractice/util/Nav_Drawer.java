@@ -120,11 +120,13 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 //        } else if (id == R.id.nav_gallery) {
 //            // Displays a series of images of the actual cards
 
+        } else if (id == R.id.nav_descriptions) {
+            loadPdf(Constants.card_descriptions);
 
         } else if (id == R.id.nav_akc) {
             Log.i(TAG, "click on nav_akc");
             // Takes the user to the Rally page on the AKC website
-            loadPdf(Constants.akc_url, getString(R.string.nav_akc));
+            loadPdf(Constants.akc_url);
 
         } else if (id == R.id.nav_share) {
             // Allows user to share the app via text message, twitter, email, and Facebook
@@ -197,7 +199,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         startActivity(intent);
     }
 
-    private void loadPdf(String url, String title) {
+    private void loadPdf(String url) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setDataAndType(Uri.parse( Constants.google_viewer_url + url), Constants.text_html);
         startActivity(intent);
