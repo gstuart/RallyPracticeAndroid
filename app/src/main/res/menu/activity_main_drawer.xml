@@ -14,8 +14,11 @@
                     <!--android:icon="@drawable/ic_menu_gallery"-->
                     <!--android:title="@string/cards" />-->
                 <item
+                    android:id="@+id/nav_descriptions"
+                    android:title="2017 Signs with Descriptions"
+                    android:icon="@drawable/ic_menu_gallery"/>
+                <item
                     android:id="@+id/nav_akc"
-
                     android:title="@string/akc"
                     android:icon="@mipmap/akc"/>
             </menu>

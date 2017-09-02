@@ -153,7 +153,6 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         startActivity(shareApp);
     }
 
-    //TODO 8/17 need to test this after app is published, might need to use Constants.google_play_url
     public void rateTheApp() {
         Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
         Intent myAppLink = new Intent(Intent.ACTION_VIEW, uri);
