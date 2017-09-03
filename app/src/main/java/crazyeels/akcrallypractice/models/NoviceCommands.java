@@ -8,7 +8,7 @@ public class NoviceCommands {
     // List of Commands which will randomly displayed
     private Integer [] noviceCommands = {
             R.drawable.sign002,
-//            R.drawable.sign003,
+            R.drawable.sign003,
             R.drawable.sign004,
             R.drawable.sign005,
             R.drawable.sign006,
