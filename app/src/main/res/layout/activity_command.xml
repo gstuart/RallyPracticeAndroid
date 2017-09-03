@@ -5,7 +5,16 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:padding="@dimen/marginLarge"
+
 tools:context="crazyeels.akcrallypractice.ui.Command">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,17 +24,6 @@ tools:context="crazyeels.akcrallypractice.ui.Command">
         android:textColor="@color/colorAccentDark"
         android:textSize="@dimen/textXLarge"
         android:textStyle="bold"
-        android:layout_above="@+id/content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/content"
-        android:textAlignment="center"
-        android:layout_marginLeft="@dimen/marginLarge"
-        android:layout_marginRight="@dimen/marginLarge"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
