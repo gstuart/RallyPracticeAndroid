@@ -1,5 +1,8 @@
+v3.0
+* NEW You can now see the description of the sign, then with a click of the button see the sign again.
+
 v2.1
-* Enhancement: 2017 signs are now displayed on main screen instead of text.
+* UPDATE 2017 signs are now displayed on main screen instead of text.
 
 v2.0
 # New Features
