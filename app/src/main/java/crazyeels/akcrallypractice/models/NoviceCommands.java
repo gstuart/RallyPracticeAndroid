@@ -7,7 +7,11 @@ import crazyeels.akcrallypractice.R;
 public class NoviceCommands {
     // List of Commands which will randomly displayed
     private Integer [] noviceCommands = {
-           R.drawable.splash_image,
+            R.drawable.sign002,
+//            R.drawable.sign003,
+            R.drawable.sign004,
+            R.drawable.sign005,
+            R.drawable.sign006,
            R.drawable.ic_arrow_left
 //        "#3 - Halt, Sit",
 //        "#4 - Halt, Sit, Down",
