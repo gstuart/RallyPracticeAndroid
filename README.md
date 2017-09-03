@@ -53,6 +53,7 @@ AKC Rally® is a companion sport to AKC Obedience. It requires teamwork between 
 * [Rate App](http://blog.cubeactive.com/android-how-to-create-a-rank-this-app-button/)
 * [Display pdf]()
 * [Sharing app](https://code.tutsplus.com/tutorials/android-sdk-implement-a-share-intent--mobile-8433)
+* [Wave Loading screen](https://www.youtube.com/watch?v=7d-IWhjxXIA)
 
 ## Maintainer
 [Grace Stuart](href="https://github.com/gstuart")
