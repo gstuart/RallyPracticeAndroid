@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="crazyeels.akcrallypractice.ui.loading_wave_view">
+    tools:context="crazyeels.akcrallypractice.util.loading_wave_view">
 
     <me.itangqi.waveloadingview.WaveLoadingView
         android:id="@+id/waveLoadingView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         app:wlv_borderColor="@color/colorAccent"
         app:wlv_borderWidth="3dp"
         app:wlv_shapeType="circle"
@@ -39,7 +40,6 @@
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="100"
-        />
+        android:max="100" />
 
 </LinearLayout>

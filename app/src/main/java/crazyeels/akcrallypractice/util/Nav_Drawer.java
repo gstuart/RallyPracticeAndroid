@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,7 +33,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
     // variables for Command Activity
         private NoviceCommands noviceCommand = new NoviceCommands();
         private TextView heading;
-        private TextView commandTextView;
+        private ImageView commandImageView;
         private Button nextButton;
 
     @Override
@@ -52,7 +53,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
 /* Method for Command Activity */
             heading = (TextView) findViewById(R.id.intro);
-            commandTextView = (TextView) findViewById(R.id.content);
+            commandImageView = (ImageView) findViewById(R.id.content);
             nextButton = (Button) findViewById(R.id.submitButton);
 
             View.OnClickListener nextCommand = new View.OnClickListener() {
@@ -63,8 +64,8 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
                     heading.setVisibility(View.GONE);
 
                     // Update the screen with new command
-                    String nCommand = noviceCommand.getNoviceCommand();
-                    commandTextView.setText(nCommand);
+                    Integer nCommand = noviceCommand.getNoviceCommand();
+                    commandImageView.setImageResource(nCommand);
                     nextButton.setText(getString(R.string.another));
                 }
             } ;

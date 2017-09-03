@@ -19,13 +19,10 @@ tools:context="crazyeels.akcrallypractice.ui.Command">
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/content"
-        android:textSize="@dimen/textXLarge"
-        android:textColor="@color/colorAccent"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginLeft="@dimen/marginLarge"
         android:layout_marginRight="@dimen/marginLarge"
