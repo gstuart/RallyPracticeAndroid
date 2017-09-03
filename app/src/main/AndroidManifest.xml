@@ -41,7 +41,7 @@
                 android:screenOrientation="portrait"
                 android:value="crazyeels.akcrallypractice.ui.Command" />
         </activity>
-
+        <activity android:name=".ui.loading_wave_view"></activity>
     </application>
 
 </manifest>

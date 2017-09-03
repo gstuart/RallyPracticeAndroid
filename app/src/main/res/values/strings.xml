@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-<!--TODO need to come up with a better app_description-->
+    <!--TODO need to come up with a better app_description-->
 
     <string name="app_description">Single Source For All Your AKC Rally® Practice Needs</string>
     <string name="begin">Begin</string>
@@ -14,15 +14,15 @@
 
     <!-- Nav Drawer -->
     <string name="learn">Learn</string>
-        <string name="cards">Rally® Cards</string>
-        <string name="video">Demo Videos</string>
-        <string name="akc">Rule Book</string>
+    <string name="cards">Rally® Cards</string>
+    <string name="video">Demo Videos</string>
+    <string name="akc">Rule Book</string>
     <string name="communicate">Communicate</string>
-        <string name="share">Share</string>
-            <string name="shareSubject">AKC RALLY® PRACTICE</string>
-            <string name="shareBody">Check out this great app!</string>
-            <string name="shareVia">Share via</string>
-        <string name="rate">Rate</string>
+    <string name="share">Share</string>
+    <string name="shareSubject">AKC RALLY® PRACTICE</string>
+    <string name="shareBody">Check out this great app!</string>
+    <string name="shareVia">Share via</string>
+    <string name="rate">Rate</string>
     <string name="support">Support</string>
 
     <!-- Main -->
