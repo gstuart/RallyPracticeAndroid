@@ -1,5 +1,6 @@
-v2.1
-New: New spinner to watch while your video or pdf loads.
+v3.0
+* New: New loading screen to watch while wait.
+* Enhancement: Actual signs are displayed on main screen instead of text.
 
 v2.0
 # New Features
