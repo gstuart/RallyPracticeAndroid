@@ -35,4 +35,11 @@
         app:wlv_waveAmplitude="70"
         app:wlv_waveColor="@color/colorAccent" />
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        />
+
 </LinearLayout>
