@@ -16,9 +16,7 @@
         <activity
             android:name=".util.Splash"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".util.Nav_Drawer"
             android:label="@string/app_name"
@@ -43,9 +41,11 @@
                 android:screenOrientation="portrait"
                 android:value="crazyeels.akcrallypractice.ui.Command" />
         </activity>
-        <activity android:name=".util.loading_wave_view">
-
-        </activity>
+        <activity android:name=".util.loading_wave_view"></activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
