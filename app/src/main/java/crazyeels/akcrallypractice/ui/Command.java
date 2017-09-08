@@ -13,7 +13,7 @@ import crazyeels.akcrallypractice.models.NoviceCommands;
 import crazyeels.akcrallypractice.util.Nav_Drawer;
 
 
-public class Main extends Nav_Drawer {
+public class Command extends Nav_Drawer {
 
     private NoviceCommands noviceCommand = new NoviceCommands();
     private TextView heading;

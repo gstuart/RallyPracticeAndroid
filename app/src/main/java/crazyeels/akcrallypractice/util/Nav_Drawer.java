@@ -30,11 +30,11 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
 
     public static final String TAG = Nav_Drawer.class.getSimpleName();
 
-    // variables for Command Activity
-        private NoviceCommands noviceCommand = new NoviceCommands();
-        private TextView heading;
-        private ImageView commandImageView;
-        private Button nextButton;
+//    // variables for Command Activity
+//        private NoviceCommands noviceCommand = new NoviceCommands();
+//        private TextView heading;
+//        private ImageView commandImageView;
+//        private Button nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,26 +51,26 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-/* Method for Command Activity */
-            heading = (TextView) findViewById(R.id.intro);
-            commandImageView = (ImageView) findViewById(R.id.content);
-            nextButton = (Button) findViewById(R.id.submitButton);
-
-            View.OnClickListener nextCommand = new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    // Remove Let's Practice Heading
-                    heading.setVisibility(View.GONE);
-
-                    // Update the screen with new command
-                    Integer nCommand = noviceCommand.getNoviceCommand();
-                    commandImageView.setImageResource(nCommand);
-                    nextButton.setText(getString(R.string.another));
-                }
-            } ;
-
-            nextButton.setOnClickListener(nextCommand);
+///* Method for Command Activity */
+//            heading = (TextView) findViewById(R.id.intro);
+//            commandImageView = (ImageView) findViewById(R.id.content);
+//            nextButton = (Button) findViewById(R.id.submitButton);
+//
+//            View.OnClickListener nextCommand = new View.OnClickListener() {
+//
+//                @Override
+//                public void onClick(View v) {
+//                    // Remove Let's Practice Heading
+//                    heading.setVisibility(View.GONE);
+//
+//                    // Update the screen with new command
+//                    Integer nCommand = noviceCommand.getNoviceCommand();
+//                    commandImageView.setImageResource(nCommand);
+//                    nextButton.setText(getString(R.string.another));
+//                }
+//            } ;
+//
+//            nextButton.setOnClickListener(nextCommand);
 
     }
 // Methods for Nav_Drawer
