@@ -7,13 +7,16 @@ android:layout_height="match_parent"
 android:padding="@dimen/marginLarge"
 tools:context="crazyeels.akcrallypractice.ui.Command">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/content"
-        android:textAlignment="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/content"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <include layout="@layout/activity_main"></include>
+
 
     <TextView
         android:layout_width="wrap_content"

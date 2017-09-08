@@ -8,6 +8,10 @@
     tools:context="crazyeels.akcrallypractice.util.Nav_Drawer"
     tools:showIn="@layout/app_bar_main">
 
-    <include layout="@layout/activity_command"></include>
+    <include layout="@layout/activity_command">
+
+        <!--<include layout="@layout/activity_main"></include>-->
+
+    </include>
 
 </android.support.constraint.ConstraintLayout>
