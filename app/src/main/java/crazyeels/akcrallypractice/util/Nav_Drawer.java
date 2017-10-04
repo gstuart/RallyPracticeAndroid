@@ -16,13 +16,9 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import crazyeels.akcrallypractice.R;
-import crazyeels.akcrallypractice.models.NoviceCommands;
 import crazyeels.akcrallypractice.ui.WebViewActivity;
 
 
@@ -41,7 +37,7 @@ public class Nav_Drawer extends AppCompatActivity implements NavigationView.OnNa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_drawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar); // This needs to be commented out to run the app. BUT it makes it to where the navdrawer is no longer visible/accessible.
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
