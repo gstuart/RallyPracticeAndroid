@@ -1,6 +1,5 @@
 package crazyeels.akcrallypractice.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,7 +32,7 @@ public class Command extends Nav_Drawer {
 
             @Override
             public void onClick(View v) {
-                Log.d("In On click", "yep");
+                Log.d("In On click", "Button Clicked");
                 // Remove Let's Practice Heading
                 heading.setVisibility(View.GONE);
 
