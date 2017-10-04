@@ -35,4 +35,23 @@ public class Card {
 
     public URL getVideoLink() { return videoLink; }
 
+    public void setCardNumber(Integer cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public void setCardDetail(String cardDetail) {
+        this.cardDetail = cardDetail;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public void setVideoLink(URL videoLink) {
+        this.videoLink = videoLink;
+    }
 }
